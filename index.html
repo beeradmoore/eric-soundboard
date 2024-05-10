@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Soundbored</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: black;
+            align-items: center;
+        }
+
+        .content 
+        { 
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .soundboardHeroCard {
+            background: linear-gradient(-45deg, #930f5b, #c9373f);
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100px;
+            width:100%;
+            font-size: 32px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+
+        .soundboardItem {
+            color: white;
+            font-family: 'Roboto';
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 16px;
+            width:100%;
+            cursor: pointer;
+        }
+
+        .soundboardItemText {
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90%;
+        }
+
+        .playButton {
+            width: 16px;
+            height: 16px;
+        }
+
+        .downloadButton {
+            width: 16px;
+            height: 16px;
+        }
+
+    
+
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="soundboardHeroCard" onclick="playAudio('yeah_baybee')">
+            YEAH BAYBEE!
+        </div>
+
+        <div class="soundboardItem">
+            <span class="soundboardItemText" onclick="playAudio('alfredo_1')">Alfredo 1Alfredo 1Alfredo 1Alfredo 1Alfredo 1Alfredo 1Alfredo 1Alfredo 1</span>
+            <div>
+                <img class="playButton" src="play_button.svg" onclick="playAudio('alfredo_1')" />
+                <a href="mp3/alfredo_1.mp3" download="alfredo_1.mp3">
+                    <img class="downloadButton" src="download_button.svg" />
+                </a>
+            </div>
+        </div>
+        
+        <div class="soundboardItem" onclick="playAudio('alfredo_1')">
+            Alfredo 2 
+            <img class="playButton" src="play_button.svg" />
+        </div>
+    </div>
+
+    <audio id="alfredo_1" src="mp3/alfredo_1.mp3" preload="auto"></audio>
+    <audio id="alfredo_2" src="mp3/alfredo_2.mp3" preload="auto"></audio>
+    <audio id="alfredo_3" src="mp3/alfredo_3.mp3" preload="auto"></audio>
+    <audio id="are_you_kidding_me" src="mp3/are_you_kidding_me.mp3" preload="auto"></audio>
+    <audio id="are_you_kidding_me_2" src="mp3/are_you_kidding_me_2.mp3" preload="auto"></audio>
+    <audio id="big_dog" src="mp3/big_dog.mp3" preload="auto"></audio>
+    <audio id="daddy_wants_some" src="mp3/daddy_wants_some.mp3" preload="auto"></audio>
+    <audio id="do_it" src="mp3/do_it.mp3" preload="auto"></audio>
+    <audio id="dont_do_that" src="mp3/dont_do_that.mp3" preload="auto"></audio>
+    <audio id="i_dont_know_1" src="mp3/i_dont_know_1.mp3" preload="auto"></audio>
+    <audio id="i_dont_know_2" src="mp3/i_dont_know_2.mp3" preload="auto"></audio>
+    <audio id="im_over_here" src="mp3/im_over_here.mp3" preload="auto"></audio>
+    <audio id="im_right_here" src="mp3/im_right_here.mp3" preload="auto"></audio>
+    <audio id="ive_got_meeting" src="mp3/ive_got_meeting.mp3" preload="auto"></audio>
+    <audio id="listen_ive_got_meeting" src="mp3/listen_ive_got_meeting.mp3" preload="auto"></audio>
+    <audio id="maybe" src="mp3/maybe.mp3" preload="auto"></audio>
+    <audio id="mmaybe" src="mp3/mmaybe.mp3" preload="auto"></audio>
+    <audio id="mmmmmaybe" src="mp3/mmmmmaybe.mp3" preload="auto"></audio>
+    <audio id="no_1" src="mp3/no_1.mp3" preload="auto"></audio>
+    <audio id="no_2" src="mp3/no_2.mp3" preload="auto"></audio>
+    <audio id="no_3" src="mp3/no_3.mp3" preload="auto"></audio>
+    <audio id="no_singing" src="mp3/no_singing.mp3" preload="auto"></audio>
+    <audio id="please_stop_1" src="mp3/please_stop_1.mp3" preload="auto"></audio>
+    <audio id="please_stop_2" src="mp3/please_stop_2.mp3" preload="auto"></audio>
+    <audio id="really_stop" src="mp3/really_stop.mp3" preload="auto"></audio>
+    <audio id="stahahahhhp" src="mp3/stahahahhhp.mp3" preload="auto"></audio>
+    <audio id="stahhhp" src="mp3/stahhhp.mp3" preload="auto"></audio>
+    <audio id="stahhhp_yell" src="mp3/stahhhp_yell.mp3" preload="auto"></audio>
+    <audio id="stop_singing" src="mp3/stop_singing.mp3" preload="auto"></audio>
+    <audio id="what" src="mp3/what.mp3" preload="auto"></audio>
+    <audio id="yeah" src="mp3/yeah.mp3" preload="auto"></audio>
+    <audio id="yeah_baybee" src="mp3/yeah_baybee.mp3" preload="auto"></audio>
+    <audio id="yeahhh_baybee" src="mp3/yeahhh_baybee.mp3" preload="auto"></audio>
+    <audio id="yes" src="mp3/yes.mp3" preload="auto"></audio>
+
+
+    <script>
+        function playAudio(audio) {
+            document.getElementById(audio).play();
+        }
+    </script>
+</body>
+</html>
